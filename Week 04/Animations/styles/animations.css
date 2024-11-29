@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(161, 255, 200);
+    border-radius: 5rem;
+    border-color: rgb(214, 21, 105);
+}
+
+@keyframes myanima {
+    0% {
+      transform: translateY(0);
+      background-color: #abe;
+    }
+    50% {
+      transform: translateX(200px) translateY(-100px);
+      background-color: #24A;
+      color: #fff;
+    }
+    100% {
+      transform: translateX(-100px) translateY(-100px);
+      background-color: #57D;
+    }
+  }
+
+  .box {
+    animation: myanima 5s infinite alternate;
+  }
